@@ -1,0 +1,64 @@
+<!-- <button mat-raised-button (click)="isLinear = true" id="toggle-linear">Enable linear mode</button> -->
+
+<mat-horizontal-stepper>
+  <mat-step [stepControl]="firstFormGroup" style="background-color:green">
+    <form [formGroup]="createCampaignFormGroup">
+      <ng-template matStepLabel>Create Campaign</ng-template>
+      <h2>CREATE YOUR COMPAIGN</h2>
+      <mat-form-field>
+        <input matInput placeholder="Campaign Name" formControlName="CompaignNameCtrl" required>
+      </mat-form-field><br>
+      <mat-form-field>
+        <input matInput placeholder="Subject" formControlName="subjectCtrl" required>
+      </mat-form-field><br>
+      <mat-form-field>
+        <input matInput placeholder="From Email" formControlName="fromEmailCtrl" required>
+      </mat-form-field><br>
+      <mat-form-field>
+        <input matInput placeholder="From Name" formControlName="fromNameCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="addContactsFormGroup">
+      <ng-template matStepLabel>Add Contacts</ng-template>
+      <h2>ADD CONTACTS</h2>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="addressCtrl" required>
+      </mat-form-field><br>
+      <mat-form-field>
+        <input matInput placeholder="Name" formControlName="nameCtrl" required>
+      </mat-form-field><br>
+      <mat-form-field>
+        <input matInput placeholder="siri" formControlName="siriCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="thirdFormGroup">
+    <form [formGroup]="newsLetterFormGroup">
+      <ng-template matStepLabel>News Letter</ng-template>
+      <h2>NEWS LETTER</h2>
+      <mat-form-field>
+        <input matInput placeholder="Address2" formControlName="address2Ctrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Send</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>

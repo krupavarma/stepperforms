@@ -1,0 +1,15 @@
+.mat-step-icon {
+    background-color: green !important;
+    color: rgba(255,255,255,.87);
+}
+.mat-step-header>.mat-step-icon {
+    background-color: green !important;
+    color: rgba(255,255,255,.87);
+}
+.mat-horizontal-stepper-header .mat-step-icon, .mat-horizontal-stepper-header .mat-step-icon-not-touched {
+   background-color: green;
+}
+.mat-stepper-horizontal-line {
+    border: 2px dashed !important;
+
+}
