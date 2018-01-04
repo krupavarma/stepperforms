@@ -6,9 +6,10 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import {MatButtonModule, MatCheckboxModule,MatInputModule} from '@angular/material';
+import { CardsComponent } from './cards/cards.component';
 @NgModule({
   declarations: [
-    AppComponent,StepperComponent
+    AppComponent,StepperComponent, CardsComponent
   ],
   imports: [
     BrowserModule,BrowserAnimationsModule,MatButtonModule,MatCheckboxModule,MatStepperModule,

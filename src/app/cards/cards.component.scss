@@ -1,0 +1,29 @@
+.firstcard,.secondcard,.thirdcard{
+    border: 2px solid grey;
+    margin-left: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+	//  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-header{
+    color:white;
+    background-color: midnightblue;
+}
+.card-content{
+    p{
+        margin-top: 30px;
+    }
+}
+.padding-text{
+    padding: 20%;
+}
+.create-btn{
+    width: 90%;
+    background-color: transparent;
+    color: black;
+    border-color: palevioletred;
+    outline: 0px;
+    padding: 6%;
+    font-size: 18px;
+}
